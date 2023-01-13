@@ -1,4 +1,4 @@
-#Fazer o clone do Repositório
+Fazer o clone do Repositório
 
 Verificar as chaves do .env.example
 
