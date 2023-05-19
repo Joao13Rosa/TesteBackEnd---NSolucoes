@@ -1,15 +1,14 @@
 import { Router } from "express";
-
-import createProductController from "../controllers/createProducts.controller";
-import deleteProductController from "../controllers/deleteProducts.controller";
-import getProductController from "../controllers/getProducts.controller";
-import updateProductController from "../controllers/updateProducts.controller";
+import createUserController from "../controllers/createUsers.controller";
+import deleteUserController from "../controllers/deleteUsers.controller";
+import getUserController from "../controllers/getUsers.controller";
+import updateUserController from "../controllers/updateUsers.controller";
 
 const routes = Router();
 
-routes.post("", createProductController);
-routes.get("", getProductController);
-routes.patch("/:id",updateProductController);
-routes.delete("/:id", deleteProductController);
+routes.post("", createUserController);
+routes.get("", getUserController);
+routes.patch("/:id", updateUserController);
+routes.delete("/:id", deleteUserController);
 
 export default routes;
